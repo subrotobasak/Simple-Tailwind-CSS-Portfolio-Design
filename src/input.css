@@ -1,0 +1,25 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Common CSS */
+
+.ss-btn-primary {
+    @apply rounded py-2 px-4 font-semibold text-orange-500 text-xl border border-white hover:text-white hover:bg-orange-500 hover:border-transparent focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-offset-2;
+}
+
+.ss-service-card {
+    @apply text-white bg-gray-800 p-8 rounded-lg text-center border-4 border-[#1F2937] hover:border-indigo-700 hover:animate-pulse cursor-pointer;
+
+    > img {
+        @apply w-1/2 mx-auto rounded;
+    }
+
+    > h4 {
+        @apply my-5 text-lg underline underline-offset-8;
+    }
+}
+
+.newsletter-area {
+    background-image: url(../images/subscribe-bg.png);
+}
